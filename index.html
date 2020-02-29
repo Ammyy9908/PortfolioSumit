@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit</title>
+    <link rel="shortcut icon" href="" id="icon">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -23,11 +24,11 @@
 
 
     <!--top Header-->
-    <div class="hero is-black is-large is-primary" id="hero">
+    <div class="hero is-black is-large is-primary" id="hero" style="background-image:url(img/land.svg);background-size: cover;">
         <nav class="navbar is-transparent" role="navigation" aria-label="main navigation" style="background-color: transparent;">
             <div class="navbar-brand">
               <a class="navbar-item" href="" style="font-weight: 700;">
-                <span>Sumit</span>
+                <img src="" width="112" height="28" id="logo">
               </a>
           
               <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -50,8 +51,8 @@
             </div>
           </nav>
         <div class="hero-body has-text-centered">
-                <h1 style="font-family: 'Dancing Script';font-size: 8em;">I'm Sumit</h1>
-                <p class="subtitle">a self-taught developer</p>
+                <h1 style="font-family: 'Dancing Script';font-size: 5em;">i'm Sumit</h1>
+                <p>a web developer</p>
         </div>
     </div> 
     <!--second section-->   
@@ -65,7 +66,7 @@
                         
                        </figure>
                        <h4 class="subtitle has-text-primary" style="font-size: 2em;margin: 15px auto;" id="hi">Hi.</h4>
-                        <p  style="font-size: 2em;">I'm a web designer / developer based in <mark style="background-color: #00d1b2;color: #ffffff;">&ltBangalore&gt</Bangalore></mark> India. I have a passion for web design and love to create for web and mobile devices</p>
+                        <p  style="font-size: 2em;">I'm a web designer / developer based in <mark style="color: #ffffff;">&ltBangalore&gt</Bangalore></mark> India. I have a passion for web design and love to create for web and mobile devices</p>
                         <br>
                         <center><hr style="border:1.5px dashed #cccccc;width:100px;text-align:center;" align="center"></center>
                         <h1 class="title is-size-1" style="margin: 100px auto;font-family: Arial, Helvetica, sans-serif;" id="projects">Projects</h1>
@@ -199,21 +200,26 @@ $(document).ready(function()
 
 var base_url="https://avatars.dicebear.com/v2/avataaars/";
 var names=["inderjeet","sammy","ammy","sumit kumar","Rohini","Rakhi","Abhishek","Pradeep","Rahul","Somya Sinha","Jasbir"];
-var listOfClass=['is-info','is-primary','is-danger','is-black','is-dark'];
+var listOfClass=['is-info','is-primary','is-danger','is-warning'];
+var markColors=['#3298dc','#3298dc','#ed4568','#000000','#1d1d1d'];
 var textColors=['has-text-info','has-text-primary','has-text-danger','has-text-black','has-text-dark'];
-var randomNum=Math.floor(Math.random()*(0,listOfClass.length-1))
+var randomNum=Math.floor(Math.random()*(0,listOfClass.length));
 var Class=listOfClass[randomNum];
 var textCol=textColors[randomNum];
+var markcolor=markColors[randomNum]
 $('#footer').addClass(Class);
 $('.button').addClass(Class);
 $('#hero').addClass(Class);
 $('#hi').addClass(textCol);
 $('#work').addClass(textCol);
+$('mark').css('background-color',markcolor);
 var name="";
 var image_url="";
 name=names[Math.floor(Math.random()*(0,names.length-1))];
     image_url=base_url+name+'.svg';
     $('#dev_avatar').attr('src',image_url);
+    $('#icon').attr('href',image_url);
+    $('#logo').attr('src',image_url);
 });
     </script>
 </body>
