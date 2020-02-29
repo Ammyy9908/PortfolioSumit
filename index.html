@@ -201,7 +201,6 @@ if ($navbarBurgers.length > 0) {
 
 
 
-
 $(document).ready(function()
 {
 
@@ -211,8 +210,14 @@ var listOfClass=['is-info','is-primary','is-danger','is-black','is-dark'];
 var Class=listOfClass[Math.floor(Math.random()*(0,listOfClass.length-1))];
 $('#footer').addClass(Class);
 $('.button').addClass(Class);
-var image_url=base_url+names[Math.floor(Math.random()*(0,names.length-1))]+'.svg';
-$('#dev').attr('src',image_url);
+var name=names[Math.floor(Math.random()*(0,names.length-1))];
+var image_url=base_url+name+'.svg';
+$('#dev_avatar').attr('src',image_url);
+
+$('#dev_avatar').on('click',function()
+{
+alert("I'm "+name);
+});
 });
     </script>
 </body>
