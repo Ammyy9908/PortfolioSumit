@@ -210,14 +210,17 @@ var listOfClass=['is-info','is-primary','is-danger','is-black','is-dark'];
 var Class=listOfClass[Math.floor(Math.random()*(0,listOfClass.length-1))];
 $('#footer').addClass(Class);
 $('.button').addClass(Class);
-var name=names[Math.floor(Math.random()*(0,names.length-1))];
-var image_url=base_url+name+'.svg';
-$('#dev').attr('src',image_url);
+var name="";
+var image_url="";
 
-$('#dev').on('click',function()
+
+
+setInterval(function()
 {
-alert("I'm "+name);
-});
+    name=names[Math.floor(Math.random()*(0,names.length-1))];
+    image_url=base_url+name+'.svg';
+    $('#dev_avatar').attr('src',image_url);
+},4000);
 });
     </script>
 </body>
