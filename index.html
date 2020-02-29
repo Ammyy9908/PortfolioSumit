@@ -23,7 +23,7 @@
 
 
     <!--top Header-->
-    <div class="hero is-large is-black " style="background-image:url(https://source.unsplash.com/1600x900/?mountains);background-size:cover;background-position:center;">
+    <div class="hero is-large" style="background-image:url(https://source.unsplash.com/1600x900/?mountains);background-size:cover;background-position:center;" id="hero">
         <nav class="navbar is-transparenis-fixed-topt " role="navigation" aria-label="main navigation" style="background-color: transparent;">
             <div class="navbar-brand">
               <a class="navbar-item" href="" style="font-weight: 700;">
@@ -144,7 +144,7 @@
     </div>
 
     <!--footer-->
-    <div class="hero is-primary">
+    <div class="hero" id="footer">
         <div class="hero-body">
                 <div class="columns has-text-centered" style="margin: 50px auto;">
                             <div class="column">
@@ -166,6 +166,7 @@
 
 
 
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
         document.getElementById("mail").addEventListener('click',function()
         {
@@ -196,6 +197,18 @@ if ($navbarBurgers.length > 0) {
   });
 }
 
+});
+
+
+
+
+$(document).ready(function()
+{
+var listOfClass=['is-info','is-primary','is-danger','is-black','is-dark'];
+var Class=listOfClass[Math.floor(Math.random()*(0,listOfClass.length-1))];
+$('#footer').addClass(Class);
+    $('#hero').addClass(Class);
+$('.button').addClass(Class);
 });
     </script>
 </body>
