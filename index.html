@@ -212,9 +212,9 @@ $('#footer').addClass(Class);
 $('.button').addClass(Class);
 var name=names[Math.floor(Math.random()*(0,names.length-1))];
 var image_url=base_url+name+'.svg';
-$('#dev_avatar').attr('src',image_url);
+$('#dev').attr('src',image_url);
 
-$('#dev_avatar').on('click',function()
+$('#dev').on('click',function()
 {
 alert("I'm "+name);
 });
