@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit</title>
     <link rel="shortcut icon" href="" id="icon">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
@@ -14,6 +14,18 @@
         {
             user-select: none;
         }
+
+        .left-cloud
+        {
+            transition: all .5s ease-in-out;
+        }
+        .dots {
+  border-style:none;
+  border-top-style: dotted;
+  border-color: #5dd2b3;
+  border-width: 5px;
+  width: 10%;
+}
     </style>
 </head>
 <body>
@@ -57,8 +69,8 @@
             <figure  align="right" class="right-cloud">
                 <img src="img/cloud.svg" alt="">
             </figure>
-                <h1 style="font-family: 'Dancing Script';font-size: 8em;">I'm Sumit</h1>
-                <p class="subtitle">a self-taught web developer</p>
+                <h1 style="font-family: 'Dancing Script';font-size: 8em;">i'm Sumit</h1>
+                <p>a web developer</p>
         </div>
     </div> 
     <!--second section-->   
@@ -74,8 +86,8 @@
                        <h4 class="subtitle has-text-primary" style="font-size: 2em;margin: 15px auto;" id="hi">Hi.</h4>
                         <p  style="font-size: 2em;">I'm a web designer / developer based in <mark style="color: #ffffff;">&ltBangalore&gt</Bangalore></mark> India. I have a passion for web design and love to create for web and mobile devices</p>
                         <br>
-                        <center><hr style="border:1.5px dashed #cccccc;width:100px;text-align:center;" align="center"></center>
-                        <h1 class="title is-size-1" style="margin: 100px auto;font-family: Arial, Helvetica, sans-serif;" id="projects">Projects</h1>
+                        <center><hr class="dots"></center>
+                        <h1 class="title" style="margin: 100px auto;font-family: 'Dancing Script';font-size: 8em;" id="projects">Projects</h1>
                         <br>
                         <div class="columns">
                             <div class="column">
@@ -124,10 +136,7 @@
                                 <figure class="image">
                                     <img src="img/mac3.png" alt="truewalls">
                                 </figure>
-                            </div>
-
-                          
-                        </div>
+                            </div></div>
                     </div>
                 </div>
             </div>
@@ -136,6 +145,7 @@
 
     <div class="hero" id="contact">
                 <div class="hero-body has-text-centered">
+                    <h1 class="title" style="margin: 100px auto;font-family: 'Dancing Script';font-size: 8em;" id="projects">Contact</h1>
                     <h1 class="title" style="font-size: 3em;font-weight:100;">I can help.</h1>
                     <h2 class="subtitle has-text-primary" style="margin: 25px auto;" id="work">I’m currently available for web work.</h2>
                     <h3 class="subtitle">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</h3>
@@ -206,7 +216,7 @@ $(document).ready(function()
 
 var base_url="https://avatars.dicebear.com/v2/avataaars/";
 var names=["inderjeet","sammy","ammy","sumit kumar","Rohini","Rakhi","Abhishek","Pradeep","Rahul","Somya Sinha","Jasbir"];
-var listOfClass=['is-info','is-primary','is-danger','is-dark','is-black'];
+var listOfClass=['is-info','is-primary','is-danger','is-warning'];
 var markColors=['#3298dc','#3298dc','#ed4568','#000000','#1d1d1d'];
 var textColors=['has-text-info','has-text-primary','has-text-danger','has-text-black','has-text-dark'];
 var randomNum=Math.floor(Math.random()*(0,listOfClass.length));
