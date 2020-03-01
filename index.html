@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sumit</title>
     <link rel="shortcut icon" href="" id="icon">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
@@ -26,6 +26,21 @@
   border-width: 5px;
   width: 10%;
 }
+
+.social
+{
+    list-style: none;
+}
+
+.social li
+{
+    display: inline;
+    margin: 50px 50px;
+}
+.social li a
+{
+    font-size: 1.5em;
+}
     </style>
 </head>
 <body>
@@ -40,7 +55,7 @@
         <nav class="navbar is-transparent" role="navigation" aria-label="main navigation" style="background-color: transparent;">
             <div class="navbar-brand">
               <a class="navbar-item" href="" style="font-weight: 700;">
-                <img src="" width="112" height="28" id="logo">
+                <img src="" width="28" height="28" id="logo">
               </a>
           
               <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -69,8 +84,8 @@
             <figure  align="right" class="right-cloud">
                 <img src="img/cloud.svg" alt="">
             </figure>
-                <h1 style="font-family: 'Dancing Script';font-size: 8em;">i'm Sumit</h1>
-                <p>a web developer</p>
+                <h1 style="font-family: 'Kaushan Script';font-size: 8em;">I'm Sumit</h1>
+                <p class="subtitle">a self-web developer</p>
         </div>
     </div> 
     <!--second section-->   
@@ -83,17 +98,17 @@
                         <img src="https://avatars.dicebear.com/v2/avataaars/Sumit%20Kumar.svg" alt="dev_photo" width="100" height="100" style="border-radius: 50%;" id="dev_avatar" data-tooltip="Tooltip Text" class="has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active">
                         
                        </figure>
-                       <h4 class="subtitle has-text-primary" style="font-size: 2em;margin: 15px auto;" id="hi">Hi.</h4>
+                       <h4 class="subtitle has-text-primary" style="font-size: 2em;margin: 15px auto;font-family: 'Kaushan Script';" id="hi">Hi.</h4>
                         <p  style="font-size: 2em;">I'm a web designer / developer based in <mark style="color: #ffffff;">&ltBangalore&gt</Bangalore></mark> India. I have a passion for web design and love to create for web and mobile devices</p>
                         <br>
                         <center><hr class="dots"></center>
-                        <h1 class="title" style="margin: 100px auto;font-family: 'Dancing Script';font-size: 8em;" id="projects">Projects</h1>
+                        <h1 class="title" style="margin: 100px auto;font-family: 'Kaushan Script' ;font-size: 8em;" id="projects">Projects</h1>
                         <br>
                         <div class="columns">
                             <div class="column">
                                 <h1 class="title">TrueWalls</h1>
                                 <h2>A Php Gallery For Stock Images.</h2>
-                                <a href="https://truewallssammy.000webhostapp.com/" class="button is-primary is-rounded has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active" style="margin: 25px auto;" data-tooltip="hi">Visit Now</a>
+                                <a href="https://truewallssammy.000webhostapp.com/" class="button is-primary is-rounded has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active" style="margin: 25px auto;" data-tooltip="hi" id="first"><i class="fas fa-arrow-right" style="position: relative;left:0px;" id="icon1"></i></a>
                                 <figure class="image">
                                     <img src="img/ipad.png" alt="truewalls">
                                 </figure>
@@ -106,7 +121,7 @@
                             <div class="column">
                                 <h1 class="title">PhonePe Website Redesign</h1>
                                 <h2>This is the Redesign PhonePe HomePage made with bulma CSS Framework. </h2>
-                                <a href="https://pythonkiller990.github.io/PhonePe/" class="button is-primary is-rounded" style="margin: 25px auto;">Visit Now</a>
+                                <a href="https://pythonkiller990.github.io/PhonePe/" class="button is-primary is-rounded" style="margin: 25px auto;" id="sec"><i class="fas fa-arrow-right" style="position: relative;left:0px;" id="icon2"></i></a>
                                 <figure class="image">
                                     <img src="img/mac.png" alt="truewalls">
                                 </figure>
@@ -118,7 +133,7 @@
                             <div class="column">
                                 <h1 class="title">Splash</h1>
                                 <h2>A Personal Dashboard Purely Made in JS,Jquery and Browser Local Storage API.</h2>
-                                <a href="https://github.com/pythonKiller990/Splash" class="button is-primary is-rounded" style="margin: 25px auto;">Download Now</a>
+                                <a href="https://github.com/pythonKiller990/Splash" class="button is-primary is-rounded" style="margin: 25px auto;" id="d1"><i class="fas fa-arrow-down" style="margin-right: 10px;transition: all .5s ease;position: relative;" id="icon3"></i>Download</a>
                                 <figure class="image">
                                     <img src="img/mac2.png" alt="truewalls">
                                 </figure>
@@ -132,7 +147,7 @@
                             <div class="column">
                                 <h1 class="title">Weather App</h1>
                                 <h2>This is the GUI Weather Application made in Python3.</h2>
-                                <a href="https://github.com/Ammyy9908/WeatherGUI" class="button is-primary is-rounded" style="margin: 25px auto;">Download Now</a>
+                                <a href="https://github.com/Ammyy9908/WeatherGUI" class="button is-primary is-rounded" style="margin: 25px auto;" id="d2"><i class="fas fa-arrow-down" style="margin-right: 10px;position: relative;transition: all .5s ease;" id="icon4"></i>Download</a>
                                 <figure class="image">
                                     <img src="img/mac3.png" alt="truewalls">
                                 </figure>
@@ -143,31 +158,31 @@
         </div>
     </div>
 
-    <div class="hero" id="contact">
+    <div class="hero">
                 <div class="hero-body has-text-centered">
-                    <h1 class="title" style="margin: 100px auto;font-family: 'Dancing Script';font-size: 8em;" id="projects">Contact</h1>
+                    <h1 class="title" style="margin: 100px auto;font-family: 'Kaushan Script';font-size: 8em;" id="contact">Contact</h1>
                     <h1 class="title" style="font-size: 3em;font-weight:100;">I can help.</h1>
                     <h2 class="subtitle has-text-primary" style="margin: 25px auto;" id="work">I’m currently available for web work.</h2>
                     <h3 class="subtitle">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</h3>
-                    <a href="mailto:sb78639@gmail.com" class="button is-large is-primary has-text-white" id="mail"><i class="fas fa-envelope-square"></i> Message Me</a>
+                    <a href="mailto:sb78639@gmail.com" class="button is-large is-primary has-text-white" id="mail"><i class="fas fa-envelope" style="margin-right: 10px;"></i> Message Me</a>
                 </div>
     </div>
 
     <!--footer-->
     <div class="hero is-primary" id="footer">
         <div class="hero-body">
-                <div class="columns has-text-centered" style="margin: 50px auto;">
+                <div class="columns has-text-centered" style="margin: 50px auto;padding: 10px;">
                             <div class="column">
-                                <i class="fab fa-codepen"></i>
-                                <a href="https://codepen.io/AmmySumit" class="has-text-white">Codepen.io</a>
-                            </div>
-                            <div class="column">
-                                <i class="fab fa-facebook"></i>
-                                <a href="https://www.facebook.com/me.hack.sumit" class="has-text-white">Facebook</a>
-                            </div>
-                            <div class="column">
-                                <i class="fab fa-linkedin"></i>
-                                <a href="https://www.linkedin.com/in/sumit-kumar-220100194/" class="has-text-white">LinkedIn</a>
+                               
+                                <ul class="social">
+                                    <li> 
+                                        <a href="https://codepen.io/AmmySumit" class="has-text-white"><i class="fab fa-codepen has-text-white"></i></a></li>
+                                   
+                                        <a href="https://www.facebook.com/me.hack.sumit" class="has-text-white"> <li><i class="fab fa-facebook has-text-white"></i></a></li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/sumit-kumar-220100194/" class="has-text-white"><i class="fab fa-linkedin has-text-white"></i></a></li>
+                                </ul><br>
+                                <p id="year"></p>
                             </div>
                 </div>
         </div>
@@ -214,12 +229,64 @@ if ($navbarBurgers.length > 0) {
 $(document).ready(function()
 {
 
+    //visit icon animation
+
+    $('#sec').on('mouseover',function()
+    {
+$('#icon2').css({'left':'15px','transition':'all .5s ease-in-out'});
+    });
+
+    $('#sec').on('mouseleave',function()
+    {
+        $('#icon2').css({'left':'0px','transition':'all .5s ease-in-out'});
+    });
+
+
+
+    $('#first').on('mouseover',function()
+    {
+$('#icon1').css({'left':'15px','transition':'all .5s ease-in-out'});
+    });
+
+    $('#first').on('mouseleave',function()
+    {
+        $('#icon3').css({'left':'0px','transition':'all .5s ease-in-out'});
+    });
+
+
+    $('#d1').on('mouseover',function()
+    {
+$('#icon3').css({'top':'8px','transition':'all .5s ease-in-out'});
+    });
+
+    $('#d1').on('mouseleave',function()
+    {
+        $('#icon3').css({'top':'0px','transition':'all .5s ease-in-out'});
+    });
+
+
+
+    $('#d2').on('mouseover',function()
+    {
+$('#icon4').css({'top':'8px','transition':'all .5s ease-in-out'});
+    });
+
+    $('#d2').on('mouseleave',function()
+    {
+        $('#icon4').css({'top':'0px','transition':'all .5s ease-in-out'});
+    });
+
+
 var base_url="https://avatars.dicebear.com/v2/avataaars/";
 var names=["inderjeet","sammy","ammy","sumit kumar","Rohini","Rakhi","Abhishek","Pradeep","Rahul","Somya Sinha","Jasbir"];
-var listOfClass=['is-info','is-primary','is-danger','is-warning'];
-var markColors=['#3298dc','#3298dc','#ed4568','#000000','#1d1d1d'];
-var textColors=['has-text-info','has-text-primary','has-text-danger','has-text-black','has-text-dark'];
+var listOfClass=['is-info','is-primary','is-danger','is-warning','is-dark'];
+var markColors=['#3298dc','#5dd2b3','#ed4568','#ffdd57','#1d1d1d'];
+var textColors=['has-text-info','has-text-primary','has-text-danger','has-text-warning','has-text-dark'];
 var randomNum=Math.floor(Math.random()*(0,listOfClass.length));
+
+//copyright text
+
+$('#year').html('&copy; copyright-'+new Date().getFullYear());
 var Class=listOfClass[randomNum];
 var textCol=textColors[randomNum];
 var markcolor=markColors[randomNum]
@@ -227,6 +294,7 @@ $('#footer').addClass(Class);
 $('.button').addClass(Class);
 $('#hi').addClass(textCol);
 $('#work').addClass(textCol);
+$('.dots').css('border-color',markcolor);
 $('mark').css('background-color',markcolor);
 var name="";
 var image_url="";
