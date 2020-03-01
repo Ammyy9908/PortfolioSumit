@@ -16,10 +16,8 @@
             user-select: none;
         }
 
-        .left-cloud
-        {
-            transition: all .5s ease-in-out;
-        }
+        
+       
         .dots {
   border-style:none;
   border-top-style: dotted;
@@ -36,7 +34,7 @@
 .social li
 {
     display: inline;
-    margin: 50px 50px;
+    margin: 50px 25px;
 }
 .social li a
 {
@@ -96,6 +94,23 @@
 display: inline;
 margin: 100px auto;
 }
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+#dev_avatar:hover .tooltiptext {
+  visibility: visible;
+}
     </style>
 </head>
 <body>
@@ -106,10 +121,10 @@ margin: 100px auto;
 
 
     <!--top Header-->
-    <div class="hero is-black is-large is-primary" id="hero" style="background-image:url(img/land.svg);background-size: cover;">
+    <div class="hero is-black is-large" id="hero" style="background-image:url(img/land.svg);background-size: cover;">
         <nav class="navbar is-transparent" role="navigation" aria-label="main navigation" style="background-color: transparent;">
             <div class="navbar-brand">
-              <a class="navbar-item" href="" style="font-weight: 700;">
+              <a class="navbar-item" href="#dev_avatar" style="font-weight: 700;">
                 <img src="" width="28" height="28" id="logo">
               </a>
           
@@ -122,6 +137,9 @@ margin: 100px auto;
           
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
+                <a class="navbar-item" href="#about">
+                    About
+                  </a>
                 <a class="navbar-item" href="#skills">
                     Skills
                   </a>
@@ -147,15 +165,16 @@ margin: 100px auto;
         </div>
     </div> 
     <!--second section-->   
-    <div class="hero" >
+    <div class="hero" id="about">
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
                     <div class="column has-text-centered">
                        <figure>
-                        <img src="https://avatars.dicebear.com/v2/avataaars/Sumit%20Kumar.svg" alt="dev_photo" width="100" height="100" style="border-radius: 50%;" id="dev_avatar" data-tooltip="Tooltip Text" class="has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active">
+                        <img src="img/dev.jpg" alt="dev_photo" width="100" height="100" style="border-radius: 50%;" id="dev_avatar" data-tooltip="Tooltip Text" class="has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active">
                         
                        </figure>
+                       <span class="tooltiptext">Tooltip text</span>
                        <h4 class="subtitle has-text-primary" style="font-size: 2em;margin: 15px auto;font-family: 'Kaushan Script';" id="hi">Hi.</h4>
                         <p  style="font-size: 2em;">I'm a web designer / developer based in <mark style="color: #ffffff;">&ltBangalore&gt</Bangalore></mark> India. I have a passion for web design and love to create for web and mobile devices</p>
                         <br>
@@ -258,6 +277,8 @@ margin: 100px auto;
             
             
             </div>
+
+            
         </div>
     </div>
 
@@ -405,7 +426,7 @@ $('#mailicon').addClass('fas fa-envelope');
 
 var base_url="https://avatars.dicebear.com/v2/avataaars/";
 var names=["inderjeet","sammy","ammy","sumit kumar","Rohini","Rakhi","Abhishek","Pradeep","Rahul","Somya Sinha","Jasbir"];
-var listOfClass=['is-info','is-primary','is-danger','is-warning','is-dark'];
+var listOfClass=['is-info','is-primary','is-danger','is-warning','is-black'];
 var markColors=['#3298dc','#5dd2b3','#ed4568','#ffdd57','#1d1d1d'];
 var textColors=['has-text-info','has-text-primary','has-text-danger','has-text-warning','has-text-dark'];
 var randomNum=Math.floor(Math.random()*(0,listOfClass.length));
@@ -413,6 +434,14 @@ var randomNum=Math.floor(Math.random()*(0,listOfClass.length));
 //copyright text
 
 $('#year').html('&copy; copyright-'+new Date().getFullYear());
+
+
+var today = new Date()
+var curHr = today.getHours()
+
+
+
+
 var Class=listOfClass[randomNum];
 var textCol=textColors[randomNum];
 var markcolor=markColors[randomNum]
@@ -422,11 +451,22 @@ $('#hi').addClass(textCol);
 $('#work').addClass(textCol);
 $('.dots').css('border-color',markcolor);
 $('mark').css('background-color',markcolor);
+
+
+if (curHr < 12) {
+    $('#hero').addClass(listOfClass[0]);
+} else if (curHr < 18) {
+    $('#hero').addClass(listOfClass[3]);
+} else {
+    $('#hero').addClass("is-dark");
+}
+
+
+
 var name="";
 var image_url="";
 name=names[Math.floor(Math.random()*(0,names.length-1))];
     image_url=base_url+name+'.svg';
-    $('#dev_avatar').attr('src',image_url);
     $('#icon').attr('href',image_url);
     $('#logo').attr('src',image_url);
 });
