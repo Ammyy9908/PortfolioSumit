@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="" id="icon">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     <style>
@@ -41,6 +42,60 @@
 {
     font-size: 1.5em;
 }
+
+#true
+{
+    transition: .5s ease-in-out;
+    width: 400;
+    height: 400;
+}
+
+#true:hover
+{
+    transform: rotateZ(15deg);
+}
+#python
+{
+    transition: .5s ease-in-out;
+    width: 400;
+    height: 400;
+}
+
+#python:hover
+{
+    transform: rotateZ(15deg);
+}
+
+
+#splash
+{
+    transition: .5s ease-in-out;
+    width: 400;
+    height: 400;
+}
+
+#splash:hover
+{
+    transform: rotateZ(8deg);
+}
+
+#phonepe
+{
+    transition: .5s ease-in-out;
+    width: 400;
+    height: 400;
+}
+
+#phonepe:hover
+{
+    transform: rotateZ(-5deg);
+}
+
+.skills li
+{
+display: inline;
+margin: 100px auto;
+}
     </style>
 </head>
 <body>
@@ -67,6 +122,9 @@
           
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
+                <a class="navbar-item" href="#skills">
+                    Skills
+                  </a>
                 <a class="navbar-item" href="#projects">
                   Projects
                 </a>
@@ -84,7 +142,7 @@
             <figure  align="right" class="right-cloud">
                 <img src="img/cloud.svg" alt="">
             </figure>
-                <h1 style="font-family: 'Kaushan Script';font-size: 8em;">I'm Sumit</h1>
+                <h1 style="font-family: 'Kaushan Script';font-size: 5em;" class="animated jello">I'm Sumit</h1>
                 <p class="subtitle">a self-web developer</p>
         </div>
     </div> 
@@ -102,69 +160,114 @@
                         <p  style="font-size: 2em;">I'm a web designer / developer based in <mark style="color: #ffffff;">&ltBangalore&gt</Bangalore></mark> India. I have a passion for web design and love to create for web and mobile devices</p>
                         <br>
                         <center><hr class="dots"></center>
-                        <h1 class="title" style="margin: 100px auto;font-family: 'Kaushan Script' ;font-size: 8em;" id="projects">Projects</h1>
-                        <br>
-                        <div class="columns">
-                            <div class="column">
-                                <h1 class="title">TrueWalls</h1>
-                                <h2>A Php Gallery For Stock Images.</h2>
-                                <a href="https://truewallssammy.000webhostapp.com/" class="button is-primary is-rounded has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active" style="margin: 25px auto;" data-tooltip="hi" id="first"><i class="fas fa-arrow-right" style="position: relative;left:0px;" id="icon1"></i></a>
-                                <figure class="image">
-                                    <img src="img/ipad.png" alt="truewalls">
-                                </figure>
-                                
-                            </div>
-
-                        </div>
-
-                        <div class="columns">
-                            <div class="column">
-                                <h1 class="title">PhonePe Website Redesign</h1>
-                                <h2>This is the Redesign PhonePe HomePage made with bulma CSS Framework. </h2>
-                                <a href="https://pythonkiller990.github.io/PhonePe/" class="button is-primary is-rounded" style="margin: 25px auto;" id="sec"><i class="fas fa-arrow-right" style="position: relative;left:0px;" id="icon2"></i></a>
-                                <figure class="image">
-                                    <img src="img/mac.png" alt="truewalls">
-                                </figure>
-                            </div>
-                        </div>
-
-
-                        <div class="columns">
-                            <div class="column">
-                                <h1 class="title">Splash</h1>
-                                <h2>A Personal Dashboard Purely Made in JS,Jquery and Browser Local Storage API.</h2>
-                                <a href="https://github.com/pythonKiller990/Splash" class="button is-primary is-rounded" style="margin: 25px auto;" id="d1"><i class="fas fa-arrow-down" style="margin-right: 10px;transition: all .5s ease;position: relative;" id="icon3"></i>Download</a>
-                                <figure class="image">
-                                    <img src="img/mac2.png" alt="truewalls">
-                                </figure>
-                            </div>
-
-                            
-                        </div>
-
-
-                        <div class="columns">
-                            <div class="column">
-                                <h1 class="title">Weather App</h1>
-                                <h2>This is the GUI Weather Application made in Python3.</h2>
-                                <a href="https://github.com/Ammyy9908/WeatherGUI" class="button is-primary is-rounded" style="margin: 25px auto;" id="d2"><i class="fas fa-arrow-down" style="margin-right: 10px;position: relative;transition: all .5s ease;" id="icon4"></i>Download</a>
-                                <figure class="image">
-                                    <img src="img/mac3.png" alt="truewalls">
-                                </figure>
-                            </div></div>
+                       
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
+    <!--section3-->
+    <div class="hero">
+        <div class="her-body has-text-centered">
+            <h1 class="animated" style="margin: 100px auto;font-family: 'Kaushan Script' ;font-size: 5em;" id="skills">Skills</h1>
+            <br>
+
+            <ul class="skills">
+                <li>HTML <progress class="progress is-primary is-small" value="75" max="100" style="width: 200px;text-align: center;margin:15px auto"></progress></li>
+                <li>CSS3 <progress class="progress is-link is-small" value="65" max="100" style="width: 200px;text-align: center;margin:15px auto"></progress></li>
+                <li>Javascript <progress class="progress is-warning is-small" value="70" max="100" style="width: 200px;text-align: center;margin:15px auto"></progress></li>
+                <li>Python3 <progress class="progress is-danger is-small" value="55" max="100" style="width: 200px;text-align: center;margin:15px auto"></progress></li>
+                <li>PHP <progress class="progress is-info is-small" value="70" max="100" style="width: 200px;text-align: center;margin:15px auto"></progress></li>
+                <li>React <progress class="progress is-black is-small" value="35" max="100" style="width: 200px;text-align: center;margin:15px auto"></progress></li>
+                <li>Bulma,Bootstrap,Materialize<progress class="progress is-dark is-small" value="80" max="100" style="width: 200px;text-align: center;margin:15px auto"></progress></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <!--section4-->
+    <div class="hero">
+        <div class="her-body has-text-centered">
+            <h1 class="animated" style="margin: 100px auto;font-family: 'Kaushan Script' ;font-size: 5em;" id="projects">Projects</h1>
+            <br>
+            <div class="columns">
+                <div class="column">
+                    <figure class="image">
+                        <img src="img/ipad.png" alt="truewalls" id="true">
+                    </figure>
+                    
+                </div>
+
+                <div class="column">
+                    <h1 class="title">TrueWalls</h1>
+                    <h2>A Php Gallery For Stock Images.</h2>
+                    <a href="https://truewallssammy.000webhostapp.com/" class="button is-primary is-rounded has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active" style="margin: 25px auto;" data-tooltip="hi" id="first"><i class="fas fa-arrow-right" style="position: relative;left:0px;" id="icon1"></i></a>
+                </div>
+
+            </div>
+
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title">PhonePe Website Redesign</h1>
+                    <h2>This is the Redesign PhonePe HomePage made with bulma CSS Framework. </h2>
+                    <a href="https://pythonkiller990.github.io/PhonePe/" class="button is-primary is-rounded" style="margin: 25px auto;" id="sec"><i class="fas fa-arrow-right" style="position: relative;left:0px;" id="icon2"></i></a>
+                    
+                </div>
+
+                <div class="column">
+                    <figure class="image">
+                        <img src="img/mac.png" alt="truewalls" id="phonepe">
+                    </figure>
+                </div>
+            </div>
+
+
+            <div class="columns">
+                <div class="column">
+                    
+                    <figure class="image">
+                        <img src="img/mac2.png" alt="truewalls" id="splash">
+                    </figure>
+                </div>
+
+                <div class="column">
+                    <h1 class="title">Splash</h1>
+                    <h2>A Personal Dashboard Purely Made in JS,Jquery and Browser Local Storage API.</h2>
+                    <a href="https://github.com/pythonKiller990/Splash" class="button is-primary is-rounded" style="margin: 25px auto;" id="d1"><i class="fas fa-arrow-down" style="margin-right: 10px;transition: all .5s ease;position: relative;" id="icon3"></i>Download</a>
+                </div>
+
+                
+            </div>
+
+
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title">Weather App</h1>
+                    <h2>This is the GUI Weather Application made in Python3.</h2>
+                    <a href="https://github.com/Ammyy9908/WeatherGUI" class="button is-primary is-rounded" style="margin: 25px auto;" id="d2"><i class="fas fa-arrow-down" style="margin-right: 10px;position: relative;transition: all .5s ease;" id="icon4"></i>Download</a>
+                    
+                </div>
+
+                <div class="column">
+                    <figure class="image">
+                        <img src="img/mac3.png" alt="truewalls" id="python">
+                    </figure>
+                </div>
+            
+            
+            </div>
+        </div>
+    </div>
+
     <div class="hero">
                 <div class="hero-body has-text-centered">
-                    <h1 class="title" style="margin: 100px auto;font-family: 'Kaushan Script';font-size: 8em;" id="contact">Contact</h1>
+                    <h1 class="title" style="margin: 100px auto;font-family: 'Kaushan Script';font-size: 5em;" id="contact">Contact</h1>
                     <h1 class="title" style="font-size: 3em;font-weight:100;">I can help.</h1>
                     <h2 class="subtitle has-text-primary" style="margin: 25px auto;" id="work">I’m currently available for web work.</h2>
                     <h3 class="subtitle">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</h3>
-                    <a href="mailto:sb78639@gmail.com" class="button is-large is-primary has-text-white" id="mail"><i class="fas fa-envelope" style="margin-right: 10px;"></i> Message Me</a>
+                    <a href="mailto:sb78639@gmail.com" class="button is-large is-primary has-text-white" id="mail"><i class="fas fa-envelope" style="margin-right: 10px;" id="mailicon"></i> Message Me</a>
                 </div>
     </div>
 
@@ -275,6 +378,29 @@ $('#icon4').css({'top':'8px','transition':'all .5s ease-in-out'});
     {
         $('#icon4').css({'top':'0px','transition':'all .5s ease-in-out'});
     });
+
+
+    //animate the project title
+
+    $('#projects').on('mouseover',function()
+    {
+        $('#projects').toggleClass('tada');
+    });
+
+
+    //mail-icon animation
+
+    $('#mail').on('mouseover',function()
+    {
+$('#mailicon').addClass('fas fa-envelope-open');
+    });
+
+    $('#mail').on('mouseleave',function()
+    {
+$('#mailicon').removeClass('fas fa-envelope-open');
+$('#mailicon').addClass('fas fa-envelope');
+    });
+    
 
 
 var base_url="https://avatars.dicebear.com/v2/avataaars/";
