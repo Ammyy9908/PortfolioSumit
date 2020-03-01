@@ -95,22 +95,12 @@ display: inline;
 margin: 100px auto;
 }
 
-.tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
 
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-#dev_avatar:hover .tooltiptext {
-  visibility: visible;
-}
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -121,11 +111,11 @@ margin: 100px auto;
 
 
     <!--top Header-->
-    <div class="hero is-black is-large" id="hero" style="background-image:url(img/land.svg);background-size: cover;">
+    <div class="hero is-black is-large" id="hero" style="background-image:url(img/fly.svg);background-size: cover;background-position: center;">
         <nav class="navbar is-transparent" role="navigation" aria-label="main navigation" style="background-color: transparent;">
             <div class="navbar-brand">
-              <a class="navbar-item" href="#dev_avatar" style="font-weight: 700;">
-                <img src="" width="28" height="28" id="logo">
+              <a class="navbar-item" href="" style="font-weight: 700;">
+                <img src="img/avatar.svg" width="28" height="28" id="logo">
               </a>
           
               <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -154,14 +144,10 @@ margin: 100px auto;
             </div>
           </nav>
         <div class="hero-body has-text-centered">
-            <figure  align="left" class="left-cloud">
-                <img src="img/cloud.svg" alt="">
+            
             </figure>
-            <figure  align="right" class="right-cloud">
-                <img src="img/cloud.svg" alt="">
-            </figure>
-                <h1 style="font-family: 'Kaushan Script';font-size: 5em;" class="animated jello">I'm Sumit</h1>
-                <p class="subtitle">a self-web developer</p>
+                <h1 style="font-family: 'Kaushan Script';font-size: 4em;color: #ffffff;" class="animated jello">I'm Sumit</h1>
+                <p class="subtitle has-text-white">a self-web developer</p>
         </div>
     </div> 
     <!--second section-->   
@@ -171,10 +157,10 @@ margin: 100px auto;
                 <div class="columns">
                     <div class="column has-text-centered">
                        <figure>
-                        <img src="img/dev.jpg" alt="dev_photo" width="100" height="100" style="border-radius: 50%;" id="dev_avatar" data-tooltip="Tooltip Text" class="has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active">
+                        <img src="img/avatar.svg" alt="dev_photo" width="100" height="100" style="border-radius: 50%;" id="dev_avatar" data-tooltip="Tooltip Text" class="has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active">
                         
                        </figure>
-                       <span class="tooltiptext">Tooltip text</span>
+                       
                        <h4 class="subtitle has-text-primary" style="font-size: 2em;margin: 15px auto;font-family: 'Kaushan Script';" id="hi">Hi.</h4>
                         <p  style="font-size: 2em;">I'm a web designer / developer based in <mark style="color: #ffffff;">&ltBangalore&gt</Bangalore></mark> India. I have a passion for web design and love to create for web and mobile devices</p>
                         <br>
@@ -222,7 +208,7 @@ margin: 100px auto;
                 <div class="column">
                     <h1 class="title">TrueWalls</h1>
                     <h2>A Php Gallery For Stock Images.</h2>
-                    <a href="https://truewallssammy.000webhostapp.com/" class="button is-primary is-rounded has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active" style="margin: 25px auto;" data-tooltip="hi" id="first"><i class="fas fa-arrow-right" style="position: relative;left:0px;" id="icon1"></i></a>
+                    <a href="https://truewallssammy.000webhostapp.com/" class="button is-rounded has-tooltip-top has-tooltip-bottom-desktop has-tooltip-active is-primary" style="margin: 25px auto;" data-tooltip="hi" id="first"><i class="fas fa-arrow-right" style="position: relative;left:0px;" id="icon1"> <span></span><span></span><span></span><span></span></i></a>
                 </div>
 
             </div>
@@ -436,8 +422,7 @@ var randomNum=Math.floor(Math.random()*(0,listOfClass.length));
 $('#year').html('&copy; copyright-'+new Date().getFullYear());
 
 
-var today = new Date()
-var curHr = today.getHours()
+
 
 
 
@@ -445,21 +430,16 @@ var curHr = today.getHours()
 var Class=listOfClass[randomNum];
 var textCol=textColors[randomNum];
 var markcolor=markColors[randomNum]
-$('#footer').addClass(Class);
-$('.button').addClass(Class);
+$('#footer').addClass(listOfClass[randomNum]);
+$('.button').addClass(listOfClass[randomNum]);
+$('#hero').addClass(listOfClass[randomNum]);
 $('#hi').addClass(textCol);
 $('#work').addClass(textCol);
 $('.dots').css('border-color',markcolor);
 $('mark').css('background-color',markcolor);
 
 
-if (curHr < 12) {
-    $('#hero').addClass(listOfClass[0]);
-} else if (curHr < 18) {
-    $('#hero').addClass(listOfClass[3]);
-} else {
-    $('#hero').addClass("is-dark");
-}
+
 
 
 
@@ -467,8 +447,8 @@ var name="";
 var image_url="";
 name=names[Math.floor(Math.random()*(0,names.length-1))];
     image_url=base_url+name+'.svg';
-    $('#icon').attr('href',image_url);
-    $('#logo').attr('src',image_url);
+    $('#icon').attr('href','img/avatar.svg');
+   
 });
     </script>
 </body>
