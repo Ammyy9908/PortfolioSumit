@@ -36,7 +36,6 @@
         <rect id="rectangle18" stroke="none" fill="rgb(198, 247, 251)" x="414" y="51" width="6" height="6" />
         <rect id="rectangle19" stroke="none" fill="rgb(112, 89, 94)" x="426" y="51" width="6" height="9" />
         <path id="polygon2" stroke="none" fill="rgb(112, 89, 94)" d="M 422.5,25.38 L 437.94,37.79 407.06,37.79 422.5,25.38 Z M 422.5,25.38" />
-        <path id="oval10" stroke="none" fill="url(#gradient-oval10)" d="M 427.01,19.3 C 427.1,13.79 428.3,9.64 429.67,10.02 431.05,10.41 432.09,15.19 431.99,20.7 431.9,26.21 430.7,30.36 429.33,29.98 428.02,29.61 427,25.25 427,20" />
         <rect id="rectangle20" stroke="none" fill="rgb(112, 89, 94)" x="426" y="26" width="6.5" height="9" />
     </g>
     <g id="hills">
@@ -119,7 +118,7 @@
         <rect id="rectangle12" stroke="none" fill="rgb(198, 247, 251)" x="208" y="139" width="8" height="8" />
         <rect id="rectangle13" stroke="none" fill="rgb(112, 89, 94)" x="223" y="139" width="8" height="12" />
         <path id="polygon" stroke="none" fill="rgb(112, 89, 94)" d="M 219,106 L 238.92,122.12 199.08,122.12 219,106 Z M 219,106" />
-        <path id="oval9" stroke="none" fill="url(#gradient-oval9)" d="M 225.01,98.09 C 225.12,90.93 226.56,85.53 228.21,86.03 229.86,86.53 231.11,92.74 230.99,99.91 230.88,107.07 229.44,112.47 227.79,111.97 226.22,111.49 225,105.83 225,99" />
+        
         <rect id="rectangle14" stroke="none" fill="rgb(112, 89, 94)" x="224" y="107" width="7.5" height="12" />
     </g>
 </svg>
